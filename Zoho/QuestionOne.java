@@ -11,29 +11,27 @@ import java.util.Scanner;
 
 public class QuestionOne {
     public static void main(String[] args) {
+        System.out.print("Enter the String: ");
         Scanner sc = new Scanner(System.in);
-
         String str = sc.next();
+
         StringBuilder result = new StringBuilder();
-
         int i = 0;
-
-        while (i < str.length()) {
+        while( i < str.length()){
             char ch = str.charAt(i);
             i++;
 
             StringBuilder num = new StringBuilder();
-
             while (i < str.length() && Character.isDigit(str.charAt(i))) {
                 num.append(str.charAt(i));
                 i++;
             }
-
             int count = Integer.parseInt(num.toString());
 
-            for (int j = 0; j < count; j++) {
+            for(int j = 0; j < count; j++){
                 result.append(ch);
             }
+
         }
         System.out.println(result);
     }
