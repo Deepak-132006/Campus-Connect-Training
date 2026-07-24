@@ -41,5 +41,6 @@ public class AmicableNumber {
         } else {
             System.out.println("Not an Amicable number");
         }
+        sc.close();
     }
 }

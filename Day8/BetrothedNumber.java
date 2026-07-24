@@ -18,7 +18,7 @@ public class BetrothedNumber {
     public static void main(String[] args) {
         int a = 0, b = 0, sum = 0, divisorSum = 0;
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Enter the first value: ");
         a = sc.nextInt();
 
@@ -37,9 +37,10 @@ public class BetrothedNumber {
         }
 
         if (a + 1 == divisorSum && b + 1 == sum) {
-            System.out.println("Entered number " + a + " and "+ b + " is Betrothed Number");
+            System.out.println("Entered number " + a + " and " + b + " is Betrothed Number");
         } else {
             System.out.println("Not an Betrothed number");
         }
+        sc.close();
     }
 }

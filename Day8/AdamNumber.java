@@ -27,7 +27,7 @@ public class AdamNumber {
             }
         }
         System.out.println(result);
-
+        sc.close();
     }
 
     public static int reverse(int num) {
